@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe TFM | Gerardo Hernández Carrera</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet"/>    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="shortcut icon" href="https://meeatd.gerardohdezcarrera.org/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://meeatd.gerardohdezcarrera.org/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://meeatd.gerardohdezcarrera.org/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://meeatd.gerardohdezcarrera.org/favicon-16x16.png">
+    <link rel="manifest" href="https://meeatd.gerardohdezcarrera.org/site.webmanifest">
+    <link rel="mask-icon" href="https://meeatd.gerardohdezcarrera.org/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header hidden">
+        <div class="logo">
+            <a href="#">
+                <svg width="40" height="40" viewBox="0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_384_200)">
+                    <path d="M374.01 329.401H293.375C275.354 329.401 259.458 320.318 250 306.484V397.276C250.693 397.276 251.375 397.313 252.073 397.302C303.313 396.594 348.188 369.688 374.01 329.401Z"/>
+                    <path d="M249.563 447.818C140.292 447.583 51.2084 357.396 52.2657 248.125C53.3073 139.813 141.438 52.3281 250 52.3281V0.119792C249.526 0.119792 249.052 0.109375 248.573 0.109375C111.724 0.875 0.119834 113.068 0.0312919 249.917C-0.0468331 386.391 109.229 497.359 245.052 499.995C246.708 500.026 248.349 500.026 250 500.026V447.813C249.854 447.813 249.714 447.818 249.563 447.818Z"/>
+                    <path d="M102.828 254.583C105.193 333.781 171 397.25 250 397.276V306.484C244.239 298.057 240.87 287.87 240.87 276.901H250V102.917L246.573 102.922C165.354 104.781 100.375 172.359 102.828 254.583Z"/>
+                    <path d="M402.901 52.3282C360.63 19.599 307.589 0.119873 250 0.119873V52.3282H402.901Z" />
+                    <path d="M452 102.839H381.984L250 102.917V276.901H445.932C443.432 295.302 438.406 312.896 431.208 329.328L431.188 329.401H431.177C400.609 399.115 330.995 447.813 250 447.813V500.026C386.599 499.958 499.969 387.25 499.969 250.073C499.969 195.016 482.156 144.135 452 102.839Z" />
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_384_200" x1="312" y1="43.5" x2="312.005" y2="397.304" gradientUnits="userSpaceOnUse">
+                    <stop offset="1" stop-color="white"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_384_200" x1="125.016" y1="0.109375" x2="125.016" y2="500.026" gradientUnits="userSpaceOnUse">
+                    <stop offset="1" stop-color="white"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_384_200" x1="176.38" y1="102.917" x2="176.38" y2="397.276" gradientUnits="userSpaceOnUse">
+                    <stop offset="1" stop-color="white"/>
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_384_200" x1="326.451" y1="0.119876" x2="-184" y2="191" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.7655" stop-color="white"/>
+                    </linearGradient>
+                    <linearGradient id="paint4_linear_384_200" x1="374.984" y1="102.839" x2="374.984" y2="500.026" gradientUnits="userSpaceOnUse">
+                    <stop offset="1" stop-color="white"/>
+                    </linearGradient>
+                    <clipPath id="clip0_384_200">
+                    <rect width="500" height="500"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+            </a>
+                        </div>
+        <nav class="nav-links">
+            <ul>
+                <li> <a href="#">Inicio</a></li>
+                <li> <a href="#goals">Objetivos</a></li>
+                <li> <a href="#methodology">Metodología</a></li>
+                <li> <a href="#resultados">Resultados</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>  
+
+    <main class="banner" data-aos="fade-up">
+        <div class="banner-title">
+            <p>TRABAJO FINAL DE MÁSTER</p>
+            <h1>Competencias Digitales en estudiantes de Pedagogía del Sistema Universidad Abierta y Educación a Distancia de la Universidad Nacional Autónoma de México
+            </h1>
+            <p>2024</p>
+            <div class="img-title">
+                <img src="img/ub-logo-color-white.png" alt="Imagotipo Universidad de Barcelona">
+
+            </div>
+
+        </div>
+        <div class="banner-img">
+            <img src="img/Technology Companies Illustration 5.svg" alt="">
+
+        </div>
+    </main>
+
+    <article class="me" data-aos="fade-right">
+        <div class="me-text">
+            <h2>Gerardo Hernández Carrera</h2>
+            <p>
+                eLearning specialist with +3 years of professional experience in: development of digital environments, design of learning experiences and instructional design applied in corporate environments.
+                <br><br>
+                I believe in the transformative power of education and my commitment is to design experiences that resonate, empower, and promote lifelong learning.
+            </p>
+            <br>
+            <a href="https://www.linkedin.com/in/gerardohdezcarrera/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="me-img">
+            <img src="img/TFM GHC (3).png" alt="Gerardo Hernández foto">
+        </div>
+    </article>
+
+    <article class="goals" id="goals">
+        <div class="goals-title" data-aos="fade-in">
+            <h2>
+                <strong>Objetivos</stron>
+            </h2>
+        </div>
+        <div class="goal-main" data-aos="fade-right">
+            <div class="goal-main-img">
+                <img src="img/Icon_Project Objectives.svg" alt="Objetivo general">
+
+            </div>
+            <h3>Objetivo general</h3>
+            <p>El objetivo general fue describir las CD del alumnado de la Licenciatura en Pedagogía de cualquier modalidad del SUAyED de la UNAM, campus Ciudad Universitaria (CU).</p>
+        </div>
+        <div class="goal-sp">
+            <div class="container" data-aos="fade-up">
+                <div class="goal-sp-img">
+                    <img src="img/Icon_Project Goals.svg" alt="Objetivo general">
+    
+                </div>
+                <h4>Objetivo específico</h4>
+                <p>Evaluar niveles de competencia digital.</p>
+            </div>
+            <div class="container" data-aos="fade-up">
+                <div class="goal-sp-img">
+                    <img src="img/Icon_Project Goals.svg" alt="Objetivo general">
+    
+                </div>
+                <h4>Objetivo específico</h4>
+                <p>Identificar perfiles en función de sus competencias digitales. 
+                </p>
+            </div>
+            <div class="container" data-aos="fade-up">
+                <div class="goal-sp-img">
+                    <img src="img/Icon_Project Goals.svg" alt="Objetivo general">
+    
+                </div>
+                <h4>Objetivo específico</h4>
+                <p>Detectar y analizar posibles brechas digitales dentro del grupo de estudiantes.</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="muestra" data-aos="fade-in" id="methodology">
+        <div class="muestra-title" data-aos="fade-in">
+            <h2>
+                <strong>Metodología</stron>
+            </h2>
+        </div>
+        <div class="muestra-container">
+            <div class="muestra-text" data-aos="fade-right">
+                <div class="muestra-icon">
+                    <img src="img/Icon_User Segmentation.svg" alt="">
+                </div>
+                <h2>Muestra</h2>
+                <p>Se empleó un muestreo probabilístico estratificado. Esta técnica de muestreo consiste en “contemplar en la muestra los estratos (“características”) que posee la población” (Ruiz-Bueno, 2008, p. 80). 
+                    <br><br> Con esto planteado, los estratos seleccionados dependieron de la generación a la cual pertenezcan los estudiantes, poniendo como base el ciclo escolar 2023-2024. 
+                    <br><br>
+                    Se buscó tener una muestra de n=200 estudiantes, para obtener una muestra del 10%. Con la muestra representativa delimitada, se realizó una afijación proporcional para obtener la muestra representativa para cada estrato (n/N*nº de personas del estrato). Obteniendo E1=45 y E2= 155.                 </p>
+            </div>
+            <div class="muestra-img" data-aos="fade-left">
+                <img src="img/Technology Companies Illustration 4.svg" alt="Gerardo Hernández foto">
+            </div>
+        </div>
+
+        <div class="met-cards">
+            <div class="container" data-aos="fade-up">
+                <div class="met-cards-img">
+                    <img src="img/enfoque.svg" alt="Objetivo general">
+    
+                </div>
+                <h4>Enfoque Metodológico</h4>
+                <p>Cuantitativo</p>
+            </div>
+            <div class="container" data-aos="fade-up">
+                <div class="met-cards-img">
+                    <img src="img/metodo.svg" alt="Objetivo general">
+    
+                </div>
+                <h4>Método</h4>
+                <p>Encuesta</p>
+            </div>
+            <div class="container" data-aos="fade-up">
+                <div class="met-cards-img">
+                    <img src="img/instrumento.svg" alt="Objetivo general">
+    
+                </div>
+                <h4>Instrumento de Recolección</h4>
+                <p>Competencias Digitales Básicas (COBADI) <br> <br>
+                <a style="font-weight: 700; color: #364FD9;" href="https://survey.gerardohdezcarrera.org/" target="_blank">survey.gerardohdezcarrera.org</a>
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <article class="resultados" data-aos="fade-in" id="resultados">
+        <div class="resultados-title" data-aos="fade-in">
+            <h2>
+                <strong>Resultados</stron>
+            </h2>
+        </div>
+        <div class="resultados-container">
+            <div class="resultados-text" data-aos="fade-left">
+                <div class="resultados-icon">
+                    <img src="img/Icon_Project Analysis.svg" alt="">
+                </div>
+                <!-- <h2>Resultados</h2> -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempore, corrupti maiores amet fuga expedita accusantium! Non ipsum suscipit numquam cum autem a atque dolorum dolorem pariatur molestias? Ipsam, recusandae!
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus quod error dicta non! Nisi eos modi inventore! Maiores molestiae voluptatibus placeat, id quae quidem. Eos cum expedita nisi facilis?
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorem illo molestias, quisquam consectetur eveniet, sunt sequi deserunt maxime quibusdam nisi vitae inventore. Voluptatum, nulla doloribus. Eum quod ullam impedit.
+                </p>
+            </div>
+            <div class="resultados-img" data-aos="fade-right">
+                <img src="img/Technology Companies Illustration 2.svg" alt="Gerardo Hernández foto">
+            </div>
+        </div>
+        <br><br><br>
+        <div>
+            <div class="chart-one" data-aos="fade-down">
+                <h3>Primera gráfica</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, assumenda tenetur ipsum aperiam deserunt fuga exercitationem ipsa, accusantium, voluptates soluta modi eveniet? Excepturi expedita consequatur at atque cupiditate sapiente totam.</p>
+            </div>
+            <div class="chart-box-cont-bg" data-aos="fade-up" >
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <br><br><br>
+        <div>
+            <div class="chart-one" data-aos="fade-down">
+                <h3>Segunda gráfica</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, assumenda tenetur ipsum aperiam deserunt fuga exercitationem ipsa, accusantium, voluptates soluta modi eveniet? Excepturi expedita consequatur at atque cupiditate sapiente totam.</p>
+            </div>
+            <div class="chart-box-cont-bg" data-aos="fade-up">
+                <canvas id="chartTwo"></canvas>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="chart-container bg">
+            <div data-aos="fade-down">
+                <h3>Tercera gráfica</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, assumenda tenetur ipsum aperiam deserunt fuga exercitationem ipsa, accusantium, voluptates soluta modi eveniet? Excepturi expedita consequatur at atque cupiditate sapiente totam.</p>
+            </div>
+            <div class="chart-bg">
+                <div class="chart-bg-canvas" data-aos="fade-right">
+                    <h4>Gráfica 3. Género</h4>
+                    <hr>
+                    <canvas id="chartFive"></canvas>
+                </div>
+                <div class="chart-bg-data">
+                    <div class="chart-bg-data-inf" data-aos="fade-left">
+                        <img src="img/male.svg" alt="Ícono hombre">
+                        <h1>40%</h1>
+                        <p>Hombres</p>
+                    </div>
+                    <div class="chart-bg-data-inf chart-bg-data-inf-most" data-aos="fade-left">
+                        <img src="img/female.svg" alt="Ícono hombre">
+                        <h1>60%</h1>
+                        <p>Mujeres</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="chart-container">
+            <div data-aos="fade-down">
+                <h3>Cuarta gráfica</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, assumenda tenetur ipsum aperiam deserunt fuga exercitationem ipsa, accusantium, voluptates soluta modi eveniet? Excepturi expedita consequatur at atque cupiditate sapiente totam.</p>
+            </div>
+
+            <div class="chart-box">
+                <div class="chart-box-cont " data-aos="fade-up">
+                    <h4>Gráfica 4. Lorem</h4>
+                    <hr>
+                    <canvas id="chartThree"></canvas>
+                </div>
+                <div class="chart-box-cont" data-aos="fade-up">
+                    <h4>Gráfica 5. Lorem</h4>
+                    <hr>
+                    <canvas id="chartFour"></canvas>
+                </div>
+            </div>
+
+        </div>
+        <br><br><br>
+        <div>
+            <div data-aos="fade-down" class="tabla">
+                <h3>Primer tabla</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, assumenda tenetur ipsum aperiam deserunt fuga exercitationem ipsa, accusantium, voluptates soluta modi eveniet? Excepturi expedita consequatur at atque cupiditate sapiente totam.</p>
+            </div>
+            <div id="tabla" data-aos="fade-up"></div>
+        </div>
+    </article>
+
+    <footer data-aos="fade-up">
+        <div class="footer-content">
+            <div class="datos">
+                <h2>Universitat de Barcelona</h2>
+                <h4>Máster en Entornos de Enseñanza y Aprendizaje con Tecnologías Digitales</h2>
+                <p>Gerardo Hernández Carrera</p>
+            </div>
+            <div class="logos">
+                <img src="img/meeatd-logo.png" alt="Logo Máster">
+                <img class="logo-ub" src="img/ub-log-solo.png" alt="Logo Universidad de Barcelona">
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/chart1.js"></script>
+    <script src="scripts/chart2.js"></script>
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script src="scripts/tabla.js"></script>
+    <script src="scripts/btn-top.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="scripts/helpers.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/nav-responsive.js"></script>
+
+</body>
+</html>
