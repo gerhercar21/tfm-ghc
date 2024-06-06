@@ -948,6 +948,17 @@ footer {
     /* margin-top: auto; */
 }
 
+text {
+    color: white;
+    font-weight: 400;
+    font-family: 'Poppins';   
+}
+
+a {
+    color: #D97B66;
+    font-family: 'Poppins';
+}
+
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
