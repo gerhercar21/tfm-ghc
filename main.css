@@ -1559,6 +1559,10 @@ hr {
   }
   
   @media (max-width: 575px) {
+    .contact .field {
+        display: none;
+    }
+
     .form {
       grid-template-columns: 1fr;
       display:inline;
