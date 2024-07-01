@@ -1559,7 +1559,7 @@ hr {
   }
   
   @media (max-width: 575px) {
-    .contact .field {
+    .field {
         display: none;
     }
 
