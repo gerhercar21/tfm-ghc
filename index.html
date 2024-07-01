@@ -454,8 +454,8 @@
                       <label for="">Mensaje</label>
                       <span>Mensaje</span>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LfO2ZYiAAAAAKS1FTSQMcKPwbCa_KKkPptW7LgE" data-callback="onSubmit" data-action='submit'></div>
-                    <!-- <div id="g-recaptcha-error" style="text-align: left;"></div> -->
+                    <div class="g-recaptcha" data-sitekey="6Lcs8AUqAAAAABrdD7oNjxa9QiRelDpknOUCbe-k" data-callback="verifyCaptcha"></div>
+                    <div id="g-recaptcha-error" style="text-align: left;"></div>
                     <input name="enviar" type="submit" value="Enviar" class="btn" />
                   </form>
                   
@@ -493,11 +493,6 @@
     <script src="scripts/sidebar.js"></script>
     <script src="scripts/forms.js"></script>
     <script src="scripts/captcha.js"></script>
-    <script>
-        function onSubmit(token) {
-          document.getElementById("demo-form").submit();
-        }
-      </script>
 
 </body>
 </html>
