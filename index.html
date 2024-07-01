@@ -433,7 +433,7 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
       
-                <form name="contact" action="/success/" autocomplete="off" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="return submitUserForm();">
+                <form name="contact" data-netlify-recaptcha="true" action="/success/" autocomplete="off" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="return submitUserForm();">
                     <input type="hidden" name="form-name" value="contact">
                     <div hidden>
                       <label>Don’t fill this out: <input name="bot-field"></label>
