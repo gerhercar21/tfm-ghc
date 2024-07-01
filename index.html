@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- <header class="header hidden">
@@ -82,7 +83,7 @@
             </li>
             <li>
                 <a href="#">
-                    <i class='bx bx-grid-alt'></i>
+                    <i class='bx bx-home-alt-2'></i>
                     <span class="link_names">Inicio</span>
                 </a>
                 <span class="tooltip">Inicio</span>
@@ -123,8 +124,8 @@
                 <span class="tooltip">Orders</span>
             </li> -->
             <li>
-                <a href="#">
-                    <i class='bx bx-heart' ></i>
+                <a href="#contacto">
+                    <i class='bx bx-envelope'></i>
                     <span class="link_names">Contacto</span>
                 </a>
                 <span class="tooltip">Contacto</span>
@@ -384,6 +385,82 @@
                 <div id="tabla" data-aos="fade-up"></div>
             </div>
         </article>
+
+        <div class="container-con">
+            <span class="big-circle"></span>
+            <div class="form"  id="contacto" data-aos="fade-left">
+              <div class="contact-info">
+                <h3 class="title" style="font-weight: 700;">Contacto</h3>
+                <p class="text">
+                    Si te interesa conocer más sobre el proyecto, si tienes alguna duda o quieres colaborar, contáctame a través de este formulario, correo electrónico o por redes sociales.
+                </p>
+      
+                <div class="info">
+                  <div class="information">
+                    <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
+      
+                    <p>Ciudad de México</p>
+                  </div>
+                  <div class="information">
+                    <i class="fas fa-envelope"></i> &nbsp &nbsp
+                    <p>gerardohdezcarrera@gmail.com</p>
+                  </div>
+                  <!-- <div class="information">
+                    <i class="fas fa-phone"></i>&nbsp&nbsp
+                    <p>123-456-789</p>
+                  </div> -->
+                </div>
+      
+                <div class="social-media">
+                  <p>Mis redes:</p>
+                  <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gerardohdezcarrera/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.gerardohdezcarrera.org/" target="_blank">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                    <a href="https://www.instagram.com/chidovaril/" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+      
+                <form action="index.html" autocomplete="off" method="POST" onsubmit="return submitUserForm();" data-netlify="true" action="/success/" data-netlify-recaptcha="true" data-netlify="true">
+                  <h3 class="title">Escríbeme</h3>
+                  <div class="input-container">
+                    <input type="text" name="name" class="input" required />
+                    <label for="">Nombre</label>
+                    <span>Nombre</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="email" name="email" class="input" required />
+                    <label for="">Email</label>
+                    <span>Email</span>
+                  </div>
+                  <!-- <div class="input-container">
+                    <input type="tel" name="phone" class="input" />
+                    <label for="">Phone</label>
+                    <span>Phone</span>
+                  </div> -->
+                  <div class="input-container textarea">
+                    <textarea name="message" class="input" required></textarea>
+                    <label for="">Mensaje</label>
+                    <span>Mensaje</span>
+                  </div>
+                  <div class="field">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+                  <input type="submit" value="Enviar" class="btn" />
+                </form>
+              </div>
+            </div>
+          </div>
     
         <footer data-aos="fade-up">
             <div class="footer-content">
@@ -391,8 +468,6 @@
                     <h2>Universitat de Barcelona</h2>
                     <h4>Máster en Entornos de Enseñanza y Aprendizaje con Tecnologías Digitales</h2>
                     <p>Gerardo Hernández Carrera</p>
-                    <text>Contacto:</text> <br>
-                    <a href="mailto:gerardohdezcarrera@gmail.com">gerardohdezcarrera@gmail.com</a>
                 </div>
                 <div class="logos">
                     <img class="logo-Ger" src="favicon/favicon.svg" alt="Logo Universidad de Barcelona">
@@ -414,27 +489,8 @@
     <script src="scripts/helpers.js"></script>
     <!-- <script src="scripts/navbar.js"></script>
     <script src="scripts/nav-responsive.js"></script> -->
-    <script>
-        let btn = document.querySelector("#btn");
-        let sidebar = document.querySelector(".sidebar");
-        let searchBtn = document.querySelector(".bx-search");
-    
-        function toggleSidebar() {
-            let width = window.innerWidth;
-            if (width > 575) {
-                sidebar.classList.toggle("active");
-            }
-        }
-    
-        btn.onclick = toggleSidebar;
-        searchBtn.onclick = toggleSidebar;
-    
-        window.onresize = function() {
-            if (window.innerWidth <= 575) {
-                sidebar.classList.remove("active");
-            }
-        };
-    </script>
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/forms.js"></script>
 
 </body>
 </html>
