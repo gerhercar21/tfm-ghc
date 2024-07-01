@@ -1558,7 +1558,7 @@ hr {
   }
   
   @media (max-width: 575px) {
-    .field {
+    .captcha {
         display: none;
     }
 
