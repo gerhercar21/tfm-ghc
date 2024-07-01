@@ -1558,10 +1558,6 @@ hr {
   }
   
   @media (max-width: 575px) {
-    .captcha {
-        display: none;
-    }
-
     .form {
       grid-template-columns: 1fr;
       display:inline;
@@ -1645,7 +1641,6 @@ hr {
   
     .btn {
       padding: 0.45rem 1.2rem;
-      margin: 0;
     }
   }
   
