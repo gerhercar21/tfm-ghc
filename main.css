@@ -1561,6 +1561,7 @@ hr {
   @media (max-width: 575px) {
     .form {
       grid-template-columns: 1fr;
+      display:inline;
     }
   
     .contact-info:before {
@@ -1596,9 +1597,9 @@ hr {
     }
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 575px) {
     .container-con {
-      padding: 1.5rem;
+      padding: 1rem;
     }
   
     .contact-info:before {
@@ -1612,7 +1613,7 @@ hr {
   
     form,
     .contact-info {
-      padding: 1.7rem 1.6rem;
+      padding: 1.7rem 1rem;
     }
   
     .text,
