@@ -236,12 +236,38 @@ body{
     margin: 12px;
 }
 
+
+
+/* sidebar mediaqueries */
 @media (max-width: 575px) {
-    .sidebar .active {
-        width: 406px;
+    .sidebar {
+        width: 60px;
+    }
+    .sidebar.active ~ .body{
+        width: 100%;
+        left: 60px;
+    }
+    .sidebar.active {
+        width: 60px;
+    }
+    .sidebar .nav_list li .link_names {
+        display: none;
+    }
+    .sidebar .profile_content {
+        display: none;
+    }
+    .sidebar #btn {
+        display: none;
+    }
+    .logoname{
+        display: none;
+    }
+    .logo img {
+        width: 70% !important;
+        margin-left: 7px;
     }
 }
-
+/* Aqui acaba sidebar media queries */
 
 * {
     scroll-behavior: smooth;
@@ -475,7 +501,7 @@ header {
     }
     
     .banner-img img {
-        width: 70%;
+        width: 40%;
     }
 }
 
@@ -766,6 +792,7 @@ header {
     
     .muestra-container .muestra-text {
         padding-right: 0;
+        width: 100%;
     }
     
     .muestra-container .muestra-img {

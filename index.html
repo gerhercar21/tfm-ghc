@@ -409,45 +409,32 @@
     <script src="scripts/chart2.js"></script>
     <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
     <script src="scripts/tabla.js"></script>
-    <script src="scripts/btn-top.js"></script>
+    <!-- <script src="scripts/btn-top.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="scripts/helpers.js"></script>
-    <script src="scripts/navbar.js"></script>
-    <script src="scripts/nav-responsive.js"></script>
+    <!-- <script src="scripts/navbar.js"></script>
+    <script src="scripts/nav-responsive.js"></script> -->
     <script>
         let btn = document.querySelector("#btn");
         let sidebar = document.querySelector(".sidebar");
-        let searchBtn = document.querySelector(".bx-search")
-
-        btn.onclick = function(){
-            sidebar.classList.toggle("active");
+        let searchBtn = document.querySelector(".bx-search");
+    
+        function toggleSidebar() {
+            let width = window.innerWidth;
+            if (width > 575) {
+                sidebar.classList.toggle("active");
+            }
         }
-        searchBtn.onclick = function() {
-            sidebar.classList.toggle("active");
-        }
+    
+        btn.onclick = toggleSidebar;
+        searchBtn.onclick = toggleSidebar;
+    
+        window.onresize = function() {
+            if (window.innerWidth <= 575) {
+                sidebar.classList.remove("active");
+            }
+        };
     </script>
-    <script>
-        //vanilla javascript
-(function() {
- "use strict";
- var li = document.querySelectorAll("li");
- for (let i = 0; i < li.length; i++) {
-  var itm = li[i];
-  itm.addEventListener("click", function() {
-   li.forEach(s => s.classList.remove("active"));
-   this.classList.add("active");
-   const val = this.getAttribute("data-target");
-   active(val);
-  });
- }
- function active(a) {
-  let itm = document.getElementById(a);
-  let sect = document.querySelectorAll("section");
-  sect.forEach(s => s.classList.remove("active"));
-  itm.classList.add("active");
- }
-})();
 
-    </script>
 </body>
 </html>
