@@ -4,7 +4,7 @@
             document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">Por favor completa el reCAPTCHA.</span>';
             return false;
         } else {
-            document.getElementById('g-recaptcha-error').innerHTML = '';
+            document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:green;">¡reCAPTCHA completado!</span>';
             return true;
         }
     }
@@ -13,6 +13,7 @@
         if (response === '') {
             document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">Por favor completa el reCAPTCHA.</span>';
         } else {
-            document.getElementById('g-recaptcha-error').innerHTML = '';
+            document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:green;">¡reCAPTCHA completado!</span>';
         }
     }
+
