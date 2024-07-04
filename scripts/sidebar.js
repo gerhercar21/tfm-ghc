@@ -3,17 +3,20 @@ let sidebar = document.querySelector(".sidebar");
 let searchBtn = document.querySelector(".bx-search");
 
 function toggleSidebar() {
-    let width = window.innerWidth;
-    if (width > 575) {
-        sidebar.classList.toggle("active");
-    }
+    sidebar.classList.toggle("active");
 }
 
 btn.onclick = toggleSidebar;
 searchBtn.onclick = toggleSidebar;
 
-window.onresize = function() {
-    if (window.innerWidth <= 575) {
+function checkSidebarState() {
+    if (window.innerWidth <= 991) {
         sidebar.classList.remove("active");
     }
-};
+}
+
+// Verificar el estado del sidebar al cargar la página
+window.onload = checkSidebarState;
+
+// Verificar el estado del sidebar al redimensionar la ventana
+window.onresize = checkSidebarState;

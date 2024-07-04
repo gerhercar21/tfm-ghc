@@ -268,48 +268,67 @@ body {
 } */
 
 /* sidebar mediaqueries */
+/* Para dispositivos móviles */
 @media (max-width: 575px) {
-    .sidebar .logo_content .logo {
-        display: flex; /* Ensure the logo is displayed */
-        width: 100%;
-        opacity: 1; /* Ensure the logo is fully visible */
-    }
     .sidebar {
-        width: 60px;
-    }
-    .sidebar.active ~ .body {
-        width: calc(100% - 60px); /* Adjusted to maintain 100% width */
-        left: 60px;
+        position: fixed; /* Fija la posición del sidebar */
+        z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+        width: 60px; /* Ancho inicial del sidebar */
+        height: 100%; /* Altura completa de la ventana */
+        transition: width 0.3s; /* Transición suave para abrir y cerrar */
     }
     .sidebar.active {
-        width: 60px;
+        width: 250px; /* Ancho del sidebar cuando esté abierto */
     }
-    .sidebar .nav_list li .link_names {
-        display: none;
-    }
-    .sidebar .profile_content {
-        display: none;
-    }
-    .sidebar #btn {
-        display: none;
-    }
-    .logoname {
-        display: none;
+    .sidebar.active ~ .body {
+        width: calc(100% - 60px);
+        left: 60px;
     }
 
-    .logo_content {
-        width: 50vh;
-        margin-left: 2px;
-        margin-top: 15px;
+
+}
+
+/* Para dispositivos de tableta */
+@media (min-width: 576px) and (max-width: 991px) {
+    .sidebar {
+        position: fixed; /* Fija la posición del sidebar */
+        z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+        width: 60px; /* Ancho inicial del sidebar */
+        height: 100%; /* Altura completa de la ventana */
+        transition: width 0.3s; /* Transición suave para abrir y cerrar */
+    }
+    .sidebar.active {
+        width: 250px; /* Ancho del sidebar cuando esté abierto */
+    }
+    .sidebar ul li {
+        height: 45px; /* Ajusta la altura de los elementos de la lista */
+    }
+    .sidebar ul li i {
+        font-size: 18px; /* Reduce el tamaño de los iconos */
+    }
+    .sidebar ul li .link_names {
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+    .sidebar .profile_content .profile {
+        height: 50px; /* Ajusta la altura del perfil */
+    }
+    .profile .profile_details img {
+        height: 35px; /* Reduce el tamaño de la imagen de perfil */
+        width: 35px;
+    }
+    .profile .profile_details .name {
+        font-size: 13px; /* Reduce el tamaño del texto del nombre */
+    }
+    .profile .profile_details .job {
+        font-size: 10px; /* Reduce el tamaño del texto del trabajo */
+    }
+    .search-icon {
+        display: none;
+    }
+    .sidebar ul {
+        margin-top: 5px;
     }
 
-    .sidebar ul li .tooltip {
-        left: 80px;
-        width: auto;
-        padding: 0 10px;
-        text-align: left;
-        white-space: nowrap;
-    }
 }
 
 /* Aqui acaba sidebar media queries */
