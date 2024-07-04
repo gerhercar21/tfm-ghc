@@ -272,7 +272,7 @@ body {
 @media (max-width: 575px) {
     .sidebar {
         position: fixed; /* Fija la posición del sidebar */
-        z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+        z-index: 1100; /* Asegúrate de que esté encima de otros elementos */
         width: 60px; /* Ancho inicial del sidebar */
         height: 100%; /* Altura completa de la ventana */
         transition: width 0.3s; /* Transición suave para abrir y cerrar */
@@ -292,13 +292,17 @@ body {
 @media (min-width: 576px) and (max-width: 991px) {
     .sidebar {
         position: fixed; /* Fija la posición del sidebar */
-        z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+        z-index: 1100; /* Asegúrate de que esté encima de otros elementos */
         width: 60px; /* Ancho inicial del sidebar */
         height: 100%; /* Altura completa de la ventana */
         transition: width 0.3s; /* Transición suave para abrir y cerrar */
     }
     .sidebar.active {
         width: 250px; /* Ancho del sidebar cuando esté abierto */
+    }
+    .sidebar.active ~ .body {
+        width: calc(100% - 60px);
+        left: 60px;
     }
     .sidebar ul li {
         height: 45px; /* Ajusta la altura de los elementos de la lista */
@@ -1398,7 +1402,7 @@ hr {
     font-size: 0.9rem;
     font-weight: 400;
     pointer-events: none;
-    z-index: 1000;
+    z-index: 999;
     transition: 0.5s;
   }
   
