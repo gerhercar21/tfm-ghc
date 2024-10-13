@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informe TFM | Gerardo Hernández Carrera</title>
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -15,6 +16,8 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 <body>
     
@@ -27,12 +30,12 @@
             <i class='bx bx-menu-alt-right' id="btn" style="font-size: 25px;"></i>
         </div>
         <ul class="nav_list">
-            <li class="search-icon">
+            <!-- <li class="search-icon">
                 
                 <i class='bx bx-search'></i>
                 <input type="text" placeholder="Search...">
                 <span class="tooltip">Search</span>
-            </li>
+            </li> -->
             <li>
                 <a href="#">
                     <i class='bx bx-home-alt-2'></i>
@@ -50,9 +53,9 @@
             <li>
                 <a href="#goals">
                     <i class='bx bx-chat' ></i>
-                    <span class="link_names">Objetivos</span>
+                    <span class="link_names">Justificación</span>
                 </a>
-                <span class="tooltip">Objetivos</span>
+                <span class="tooltip">Justificación</span>
             </li>
             <li>
                 <a href="#methodology">
@@ -68,13 +71,13 @@
                 </a>
                 <span class="tooltip">Resultados</span>
             </li>
-            <!-- <li>
-                <a href="#">
+            <li>
+                <a href="#analyze">
                     <i class='bx bx-cart-alt' ></i>
-                    <span class="link_names">Orders</span>
+                    <span class="link_names">Análisis</span>
                 </a>
-                <span class="tooltip">Orders</span>
-            </li> -->
+                <span class="tooltip">Análisis</span>
+            </li>
             <li>
                 <a href="#contacto">
                     <i class='bx bx-envelope'></i>
@@ -129,11 +132,14 @@
     
         <article class="me" data-aos="fade-right" id="perfil">
             <div class="me-text">
+                <h6>PRESENTA</h6>
                 <h2>Gerardo Hernández Carrera</h2>
                 <p>
-                    eLearning specialist with +3 years of professional experience in: development of digital environments, design of learning experiences and instructional design applied in corporate environments.
+                    Licenciado en Pedagogía por la Universidad Nacional Autónoma de México.
+                    <br>
+                    Máster en Entornos de Enseñanza y Aprendizaje con Tecnologías Digitales por la Universidad de Barcelona.
+
                     <br><br>
-                    I believe in the transformative power of education and my commitment is to design experiences that resonate, empower, and promote lifelong learning.
                 </p>
                 <br>
                 <a href="https://www.linkedin.com/in/gerardohdezcarrera/" target="_blank">LinkedIn</a>
@@ -142,20 +148,64 @@
                 <img src="img/gerardo-foto.png" alt="Gerardo Hernández foto">
             </div>
         </article>
+        <article class="me tutora" data-aos="fade-left" id="perfil">
+            <div class="me-text">
+                <h6>TUTORA</h6>
+                <h2>Dra. Anna Maria Escofet Roig</h2>
+                <p>
+                    Profesora del Departamento de Teoría e Historia de la Educación de la Facultad de Educación de la Universidad de Barcelona.
+                    <br><br>
+                </p>
+                <br>
+                <a href="https://www.researchgate.net/profile/Anna-Escofet-Roig" target="_blank">ResearchGate</a>
+            </div>
+            <div class="me-img">
+                <img style="border-radius: 10rem;" src="https://www.ub.edu/idp-universitat/wp-content/uploads/2022/04/foto-anna-escofet-180x180.png" alt="Anna Maria Escofet Roig foto">
+            </div>
+        </article>
     
         <article class="goals" id="goals">
             <div class="goals-title" data-aos="fade-in">
                 <h2>
-                    <strong>Objetivos</stron>
+                    <strong>Justificación</stron>
                 </h2>
             </div>
-            <div class="goal-main" data-aos="fade-right">
-                <div class="goal-main-img">
-                    <img src="img/Icon_Project Objectives.svg" alt="Objetivo general">
-    
+            <div class="muestra-container mc-1">
+                <div class="muestra-text" data-aos="fade-right">
+                    <!-- <div class="muestra-icon">
+                        <img src="img/Icon_User Segmentation.svg" alt="">
+                    </div> -->
+                    <p>La evolución de la educación superior en México ha experimentado cambios significativos, especialmente con la diversificación de modalidades educativas ofrecidas por las Instituciones de Educación Superior (IES) (Sánchez, 2022). 
+                        <br><br>
+                        En este contexto, la Universidad Nacional Autónoma de México (UNAM) ha desempeñado un papel crucial, destacándose el Sistema Universidad Abierta y Educación a Distancia (SUAyED) como una modalidad innovadora y flexible. 
+                        <br><br>
+                        Este sistema ha contribuido a la democratización de la educación superior, permitiendo el acceso a una gran cantidad de estudiantes con diversas responsabilidades, necesidades y características (Soberanes, 2022).
+                    </p>
                 </div>
-                <h3>Objetivo general</h3>
-                <p>El objetivo general fue describir las CD del alumnado de la Licenciatura en Pedagogía de cualquier modalidad del SUAyED de la UNAM, campus Ciudad Universitaria (CU).</p>
+                <div class="muestra-img" data-aos="fade-left">
+                    <img class="desktop" src="img/resultados/just-1.png" alt="Rectoría">
+                    <img src="img/resultados/responsive/rectoria-res.png" alt="Rectoría" class="mobile">
+                </div>
+            </div>
+
+            <div class="muestra-container mc-2">
+                <div class="muestra-text" data-aos="fade-left">
+                    <!-- <div class="muestra-icon">
+                        <img src="img/Icon_User Segmentation.svg" alt="">
+                    </div> -->
+                    <p>Las tecnologías digitales son relevantes en estas modalidades, por lo que es fundamental indagar sobre cómo se desarrollan y se manifiestan las competencias respecto a su uso y aplicación en un ámbito diverso de ES.
+                        <br><br>
+                        La Competencia Digital (CD) se define como la combinación de destrezas, conocimientos y actitudes en áreas tecnológicas, de información, multimedia y comunicación (Mon et al., 2013). 
+                        <br><br>
+                        Son fundamentales para que los estudiantes enfrenten los desafíos de la sociedad digital(Adams Becker et al., 2017).
+                    </p>
+                </div>
+                <div class="muestra-img" data-aos="fade-right">
+                    <img src="img/resultados/just-2.png" alt="Biblioteca central" class="desktop">
+                    <img src="img/resultados/responsive/biblio-res.png" alt="Biblioteca central" class="mobile">
+                </div>
+            </div>
+            <!-- <div class="goal-main" data-aos="fade-right">
             </div>
             <div class="goal-sp">
                 <div class="container" data-aos="fade-up">
@@ -183,7 +233,7 @@
                     <h4>Objetivo específico</h4>
                     <p>Detectar y analizar posibles brechas digitales dentro del grupo de estudiantes.</p>
                 </div>
-            </div>
+            </div> -->
         </article>
     
         <article class="muestra" data-aos="fade-in" id="methodology">
@@ -193,7 +243,29 @@
                 </h2>
             </div>
             <div class="muestra-container">
-                <div class="muestra-text" data-aos="fade-right">
+                <div class="swiffy-slider slider-nav-dark slider-nav-visible slider-nav-mousedrag" data-aos="fade-up" >
+                    <ul class="slider-container">
+                        <li>
+                            <img class="desktop" src="img/resultados/metod-1.png" style="max-width: 100%;height: auto;">
+                            <img class="mobile" src="img/resultados/responsive/metod-1-resp.png" style="max-width: 100%;height: auto;">
+                        </li>
+                        <li>
+                            <img class="desktop" src="img/resultados/metod-2.png" style="max-width: 100%;height: auto;">
+                            <img class="mobile" src="img/resultados/responsive/metod-2-resp.png" style="max-width: 100%;height: auto;">
+                        </li>
+                    </ul>
+                
+                    <button type="button" class="slider-nav"></button>
+                    <button type="button" class="slider-nav slider-nav-next"></button>
+                
+                    <div class="slider-indicators">
+                        <button class="active" style="background-color: #ae85d6;"></button>
+                        <button style="background-color: #ae85d6;"></button>
+                        <!-- <button></button> -->
+                    </div>
+                </div>
+
+                <!-- <div class="muestra-text" data-aos="fade-right">
                     <div class="muestra-icon">
                         <img src="img/Icon_User Segmentation.svg" alt="">
                     </div>
@@ -205,10 +277,10 @@
                 </div>
                 <div class="muestra-img" data-aos="fade-left">
                     <img src="img/Technology Companies Illustration 4.svg" alt="Gerardo Hernández foto">
-                </div>
+                </div> -->
             </div>
     
-            <div class="met-cards">
+            <!-- <div class="met-cards">
                 <div class="container" data-aos="fade-up">
                     <div class="met-cards-img">
                         <img src="img/enfoque.svg" alt="Objetivo general">
@@ -235,34 +307,220 @@
                     <a style="font-weight: 700; color: #364FD9;" href="https://survey.gerardohdezcarrera.org/" target="_blank">survey.gerardohdezcarrera.org</a>
                     </p>
                 </div>
-            </div>
+            </div> -->
         </article>
     
-        <article class="resultados" data-aos="fade-in" id="resultados">
-            <div class="resultados-title" data-aos="fade-in">
+        <article class="resultados" id="resultados">
+            <div class="resultados-title" data-aos="fade-right">
                 <h2>
                     <strong>Resultados</stron>
                 </h2>
             </div>
             <div class="resultados-container">
-                <div class="resultados-text" data-aos="fade-left">
-                    <div class="resultados-icon">
-                        <img src="img/Icon_Project Analysis.svg" alt="">
-                    </div>
+                <div class="resultados-text" data-aos="fade-right">
                     <!-- <h2>Resultados</h2> -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempore, corrupti maiores amet fuga expedita accusantium! Non ipsum suscipit numquam cum autem a atque dolorum dolorem pariatur molestias? Ipsam, recusandae!
+                    <p>
+                        La sección de resultados se divide en cuatro apartados:
                         <br><br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus quod error dicta non! Nisi eos modi inventore! Maiores molestiae voluptatibus placeat, id quae quidem. Eos cum expedita nisi facilis?
-                        <br><br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorem illo molestias, quisquam consectetur eveniet, sunt sequi deserunt maxime quibusdam nisi vitae inventore. Voluptatum, nulla doloribus. Eum quod ullam impedit.
+                        <ul>
+                            <li>
+                                <strong>Descripción de la muestra: </strong>
+                                Se destacan algunas de las características más importantes de la muestra, subdividiéndose en "Datos personales, escolares y sociodemográficos" y "Datos sobre consumo de tecnología".
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Objetivo Específico 1 (OE1): </strong>
+                                Los datos presentados buscan responder al primer objetivo específico, que es evaluar las competencias digitales de los estudiantes. Para ello, se recuperan las respuestas obtenidas en cada uno de los bloques de la prueba COBADI, por lo cual se subdivide en estos cuatro bloques.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Objetivo Específico 2 (OE2): </strong>
+                                En este apartado se recuperan los datos obtenidos en el OE1 para aplicar un análisis de clúster biétapico, lo cual permitió identificar perfiles con base en las competencias digitales de los estudiantes, lo cual permitirá responder al segundo objetivo específico.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Objetivo Específico 3 (OE3): </strong>
+                                Con base en los perfiles identificados, en este último apartado se busca responder al objetivo específica 3, el cual fue analizar y detectar posibles brechas digitales. Para ello, se realizaron tablas cruzadas entre los clústeres y algunas variables seleccionadas que compaginaban con los niveles de brecha digital identificados por Van Dijk (2017): acceso motivacional, acceso físico o material, acceso a las habilidades y acceso de uso.
+                            </li>
+                            
+                        </ul>
                     </p>
                 </div>
-                <div class="resultados-img" data-aos="fade-right">
+                <div class="resultados-img" data-aos="fade-left">
                     <img src="img/Technology Companies Illustration 2.svg" alt="Gerardo Hernández foto">
                 </div>
             </div>
-            <br><br><br>
-            <div>
+            <br><br><br><br>
+
+                <!-- SLIDER -->
+                <section class="section" data-aos="fade-up">
+                    <div class="container">
+                      <div class="tab">
+                        <div class="tab__list">
+                          <div class="tab__item">Muestra</div>
+                          <div class="tab__item">OE1</div>
+                          <div class="tab__item">OE2</div>
+                          <div class="tab__item">OE3</div>
+                        </div>
+                        <div class="tab__content">
+
+                            <div class="tab__content-item tab">
+                                <div class="tab__list">
+                                    <div class="tab__item item_resp">Datos sociodemográficos</div>
+                                    <div class="tab__item">Datos consumo tecnología</div>
+                                </div>
+                                <div class="tab__content">
+                                  <div class="tab__content-item">
+                                      <img class="desktop" src="img/resultados/resultados-1.png" alt="Datos sociodemográficos">
+                                      <img class="mobile" src="img/resultados/responsive/resultados-1-resp.png" alt="Datos sociodemográficos">
+                                  </div>
+                                  <div class="tab__content-item">
+                                      <img class="desktop" src="img/resultados/resultados-2.png" alt="Datos consumo de tecnología">
+                                      <img class="mobile" src="img/resultados/responsive/resultados-2-resp.png" alt="Datos consumo de tecnología">
+                                  </div>
+                                </div>
+                              </div>
+
+                          <div class="tab__content-item tab">
+                            <div class="tab__list">
+                              <div class="tab__item">Bloque 1</div>
+                              <div class="tab__item">Bloque 2</div>
+                              <div class="tab__item">Bloque 3</div>
+                              <div class="tab__item">Bloque 4</div>
+                            </div>
+                            <div class="tab__content">
+                              <div class="tab__content-item">
+                                <h3 class="tab__content-title">Bloque 1: “Competencias en conocimiento y uso de las TIC en la comunicación social y aprendizaje colaborativo”.</h3>
+                                <p>
+                                    Este bloque se dividió en 13 ítems, en los cuales se identifica una media de 2.79.
+                                    <br><br>
+                                    Como puede observarse en la gráfica, hay una tendencia decreciente conforme se avanza en cada ítem, exceptuando los últimos dos ítems.
+                                </p>
+                                  <img class="desktop" src="img/resultados/resultados-3.png" alt="Resultados bloque 1 COBADI">
+                                  <img class="mobile" src="img/resultados/responsive/resultados-3-resp.png" alt="Resultados bloque 1 COBADI">
+                              </div>
+                              <div class="tab__content-item">
+                                <h3 class="tab__content-title">Bloque 2: “Competencias de uso de las TIC para la búsqueda y tratamiento de la información”.</h3>
+                                <p>
+                                    Este bloque se dividió en 11 ítems, en los cuales se identifica una media de 3.04.
+                                    <br><br>
+                                    A diferencia del bloque anterior, aquí se identifica que hubo un aumento en la media y, como se muestra en la gráfica, hay mayor estabilidad en la tendencia de las respuestas.
+                                </p>
+                                  <img class="desktop" src="img/resultados/resultados-4.png" alt="Resultados bloque 2 COBADI">
+                                  <img class="mobile" src="img/resultados/responsive/resultados-4-resp.png" alt="Resultados bloque 2 COBADI">
+                              </div>
+                              <div class="tab__content-item reduce">
+                                <h3 class="tab__content-title">Bloque 3: “Competencias interpersonales en el uso de las TIC en el contexto universitario”.</h3>
+                                <p>
+                                    Este bloque se dividió en 4 ítems, lo que implica una gran diferencia en cuanto a los otros dos bloques. 
+                                    <br><br>
+                                    Asimismo, en este bloque se evidencia una media de 2.31, un puntaje menor a los anteriores.
+                                </p>
+                                  <br>
+                                  <div style="text-align: center;">
+                                    <img src="img/resultados/resultados-5.png" alt="Resultados bloque 3 COBADI">
+                                  </div>
+                              </div>
+                              <div class="tab__content-item reduce">
+                                <h3 class="tab__content-title">Bloque 4: “Herramientas virtuales y de comunicación social de la Universidad”.</h3>
+                                <p>
+                                    Al igual que al anterior, este bloque se dividió en 4 ítems, y se obtuvo una media de 2.67. 
+                                    <br>
+                                </p>
+                                  <br>
+                                  <div style="text-align: center;">
+                                    <img src="img/resultados/resultados-6.png" alt="Resultados bloque 4 COBADI">
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab__content-item">
+                            <h3 class="tab__content-title">OE2: Identificar perfiles en función de sus competencias digitales</h3>
+                            <p>
+                                Para responder al segundo objetivo específico (OE2), que fue "Identificar perfiles en función de sus competencias digitales", se realizó un análisis de clúster bietápico. 
+                                <br><br>
+                                En dicho análisis, se consideraron las medias en las respuestas de cada ítem de los cuatro bloques de la prueba COBADI. Previo a esto, se hizo una estandarización de las variables a un puntaje Z.
+                                <br><br>
+                                Al aplicar el algoritmo, se obtuvieron dos conglomerados de estudiantes. El clúster 1, representado por el 55% de los estudiantes de la muestra, obtuvo resultados negativos por debajo de la media en 3 de los cuatro bloques (como se muestra en el gráfico "Características clústeres"), mientras que los estudiantes del clúster 2, que representaron el 45%, obtuvieron puntaje por arriba de la media en los mismos bloques.
+                                <br><br>
+                                Las diferencias, se identificaron en los bloques 1, 2 y 4, siendo el bloque 3 el único que fue la excepción, sin embargo, se identificó a través de un Análisis de Covarianza (ANOVA) que no fue una diferencia significativa, a diferencia de los demás bloques (ver gráfico "ANOVA: Ítems COBADI y clústeres").
+                                <br><br>
+                            </p>
+                            <div>
+                                <img class="desktop" src="img/resultados/resultados-7.png" alt="Clústeres">
+                                <img class="mobile" src="img/resultados/responsive/resultados-7-resp.png" alt="Clústeres">
+                              </div>
+                          </div>
+
+                          <div class="tab__content-item tab">
+                            <div class="tab__list">
+                              <div class="tab__item">Nivel 1</div>
+                              <div class="tab__item">Nivel 2</div>
+                              <div class="tab__item">Nivel 3</div>
+                              <div class="tab__item">Nivel 4</div>
+                            </div>
+                            <div class="tab__content">
+                              <div class="tab__content-item">
+                                <h3 class="tab__content-title">Nivel 1: Acceso motivacional</h3>
+                                <p>
+                                    Para detectar posibles brechas digitales en cuanto a nivel motivacional, se recuperó la variable de "Situación escolar".
+                                    <br><br>
+                                    Como se evidencia, existe una diferencia en cuanto a la regularidad de los estudiantes, pues se identifica que hay más estudiantes irregulares que forman parte del clúster 1 (nivel de CD por debajo de la media) y más estudiantes regulares del clúster 2(nivel por arriba de la media).
+                                </p>
+                                  <br><br>
+                                  <img class="desktop" src="img/resultados/resultados-8.png" alt="Nivel 1 Brecha Digital">
+                                  <img class="mobile" src="img/resultados/responsive/resultados-8-resp.png" alt="Nivel 1 Brecha Digital">
+                              </div>
+                              <div class="tab__content-item">
+                                <h3 class="tab__content-title">Nivel 2: Acceso físico o material</h3>
+                                <p>
+                                    Respecto al nivel físico o material, se recuperaron las variables de posesión de "Laptop/PC", "Tableta electrónica" e "Internet en casa".
+                                    <br><br>
+                                    Como se observa, respecto a posesión de laptop o PC se identifica que en ambos clústeres la mayoría de los estudiantes cuentan con este dispositivo, sin embargo, se identifica una diferencia respecto a menor porcentaje en aquellos estudiantes pertenecientes al bloque 1.
+                                    <br><br>
+                                    Respecto a posesión de tableta electrónica, se identifica que en ambos clústeres menos del 50% de los estudiantes cuentan con una, sin embargo, existe una diferencia significativa entre aquellos que no cuentan con una del clúster 1 con relación en los estudiantes del clúster 2, siendo el primero con menor porcentaje de posesión.
+                                    <br><br>
+                                    Un caso similar fue con la posesión de internet en casa, en donde si bien porcentualmente no se aprecia mucha diferencia, se realizó un ANOVA donde se identifica que existe una idferencia significativa entre los estudiantes que cuentan con este servicio, siendo los del clúster 2 que en mayor medida lo tienen.
+                                </p>
+                                  <br>
+                                  <img class="desktop" src="img/resultados/resultados-9.png" alt="Nivel 2 Brecha Digital">
+                                  <img class="mobile" src="img/resultados/responsive/resultados-9-resp.png" alt="Nivel 2 Brecha Digital">
+                              </div>
+                              <div class="tab__content-item">
+                                <h3 class="tab__content-title">Nivel 3: Acceso a las habilidades</h3>
+                                <p> 
+                                    En el nivel 3 de Acceso a las habilidades se recuperaron las variables de "Formación web 2.0", "Nivel de estudios de madre" y "Nivel de estudios de padre".
+                                    <br><br>
+                                    Como se oberva en la primera gráfica, existe una diferencia significativa respecto a si recibieron previamente formación web 2.0, evidenciando que hay más estudiantes del clúster 2 que recibieron esta formación, a diferencia de los estudiantes del primer clúster.
+                                    <br><br>
+                                    Respecto a nivel de estudios de padre y madre, no se identifican diferencias significativas, sólo como dato interesante, se identifica que en estudiantes del clúster 2 hay estudiantes cuyos padres cuentan con niveles de educación superior, a diferencia de aquellos estudiantes del primer clúster.
+                                    <br>
+                                </p>
+                                  <img class="desktop" src="img/resultados/resultados-10.png" alt="Nivel 3 Brecha Digital">
+                                  <img class="mobile" src="img/resultados/responsive/resultados-10-resp.png" alt="Nivel 3 Brecha Digital">
+                              </div>
+                              <div class="tab__content-item">
+                                <h3 class="tab__content-title">Nivel 4: Acceso de uso</h3>
+                                <p>
+                                    Para el último nivel de brecha (acceso de uso), se recuperan las variables "Conexión habitual" y "Tiempo de navegación en internet".
+                                    <br><br>
+                                    En ambas variables no se identifican diferencias significativas entre los clústeres, sin embargo, se evidencia en la primer tabla que un mayor porcentaje de estudiantes del clúster 2 cuentan con datos móviles para conectarse a internet en cualquier sitio.
+                                    <br><br>
+                                    Además, respecto a tiempo de navegación, hay mayor porcentaje de estudiantes del clúster 2 que se conectan más de 9 horas a la semana, en comparativa con los estudiantes del clúster 1.
+                                </p>
+                                  <img class="desktop" src="img/resultados/resultados-11.png" alt="Nivel 4 Brecha Digital">
+                                  <img class="mobile" src="img/resultados/responsive/resultados-11-resp.png" alt="Nivel 4 Brecha Digital">
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+            <!-- <div>
                 <div class="chart-one" data-aos="fade-down">
                     <h3>Primera gráfica</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, assumenda tenetur ipsum aperiam deserunt fuga exercitationem ipsa, accusantium, voluptates soluta modi eveniet? Excepturi expedita consequatur at atque cupiditate sapiente totam.</p>
@@ -280,9 +538,9 @@
                 <div class="chart-box-cont-bg" data-aos="fade-up">
                     <canvas id="chartTwo"></canvas>
                 </div>
-            </div>
-            <br><br><br>
-            <div class="chart-container bg">
+            </div> -->
+
+            <!-- <div class="chart-container bg">
                 <div data-aos="fade-down">
                     <h3>Tercera gráfica</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, assumenda tenetur ipsum aperiam deserunt fuga exercitationem ipsa, accusantium, voluptates soluta modi eveniet? Excepturi expedita consequatur at atque cupiditate sapiente totam.</p>
@@ -306,9 +564,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <br><br><br>
-            <div class="chart-container">
+            </div> -->
+
+            <!-- <div class="chart-container">
                 <div data-aos="fade-down">
                     <h3>Cuarta gráfica</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, assumenda tenetur ipsum aperiam deserunt fuga exercitationem ipsa, accusantium, voluptates soluta modi eveniet? Excepturi expedita consequatur at atque cupiditate sapiente totam.</p>
@@ -327,16 +585,58 @@
                     </div>
                 </div>
     
-            </div>
-            <br><br><br>
-            <div>
+            </div> -->
+
+            <!-- <div>
                 <div data-aos="fade-down" class="tabla">
                     <h3>Primer tabla</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, assumenda tenetur ipsum aperiam deserunt fuga exercitationem ipsa, accusantium, voluptates soluta modi eveniet? Excepturi expedita consequatur at atque cupiditate sapiente totam.</p>
                 </div>
                 <div id="tabla" data-aos="fade-up"></div>
-            </div>
+            </div> -->
         </article>
+
+
+        <article id="analyze" style="background: linear-gradient(45deg, #364ed9, #A163E0); margin-bottom: 4rem;">
+            <h2 data-aos="fade-in" style="text-align: center; color: white; font-weight: 700; font-size: 33.6px; padding-top: 2rem;">Análisis</h2>
+            <div style="width: 100%; text-align: center;">
+                <img class="desktop" data-aos="fade-right" style="width: 90%;" src="img/resultados/analisis-1.png" alt="">
+                <img class="mobile" data-aos="fade-right" style="width: 90%;" src="img/resultados/responsive/analisis-1-resp.png" alt="">
+                <img class="desktop" data-aos="fade-left" style="width: 90%;" src="img/resultados/analisis-2.png" alt="">
+                <img class="mobile" data-aos="fade-left" style="width: 90%;" src="img/resultados/responsive/analisis-2-resp.png" alt="">
+            </div>
+
+        </article>
+
+        <section class="action-projects2">
+
+            <article class="container-projects2">
+                <div class="img-projects2">
+                    <a>
+                        <img src="img/banner-tfm-publicado.png" alt="">
+                    </a>
+                </div>
+                <div class="intro-projects2">
+                    <h3>
+                        <strong>
+                            TFM en línea
+                        </strong>
+                        </h3>
+                    <p>
+                        Para ver el TFM completo, te invito a revisar la siguiente liga del Centro de Recursos para el Aprendizaje y la Investigación de la Universidad de Barcelona, en donde se publican los TFM con calificación "Excelente".
+                    </p>
+
+                    <div class="action-btn-projects2">
+                        <button id="btn-abrir-popup" class="btn-abrir-popup" data-bs-toggle="modal" data-bs-target="#exampleModalForm">
+                            Ver valoración
+                            <svg class="transition-transform" width="20" height="20" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.75 6.75l5.5 5.25-5.5 5.25M19 12H4.75"></path></svg>               
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        </section>
 
         <div class="container-con">
             <span class="big-circle"></span>
@@ -446,5 +746,6 @@
     <script src="scripts/forms.js"></script>
     <script src="scripts/captcha.js"></script>
     <script src="scripts/scrollSmooth.js"></script>
+    <script src="scripts/tabs.js"></script>
 </body>
 </html>
